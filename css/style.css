@@ -1,0 +1,147 @@
+@font-face {
+  font-family: logo;
+  src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: base-font;
+  src: url(../fonts/FiraSansExtraCondensed-Regular.ttf);
+}
+
+body {
+  margin: 0 0 100px 0;
+  padding: 0;
+  font-family: base-font, sans-serif;
+  font-size: 22px;
+}
+
+a, a:active, a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Head */
+header {
+  display: flex;
+  height: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px;
+  border-bottom: 5px solid black;
+  width: auto;
+}
+
+.logo {
+  font-family: logo, cursive;
+  font-size: 48px;
+}
+
+.search input, input:focus  {
+  width: 200px;
+  height: 35px;
+  padding: 5px 10px;
+  font-family: base-font, sans-serif;
+  font-size: 22px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.menu a {
+  margin-left: 10px;
+  border: 2px solid black;
+  padding: 5px 20px;
+  transition: 1s;
+}
+
+.menu a:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+  transition: 0.5s;
+}
+
+/* Content */
+
+.container {
+  margin: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.add-new-link {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding-top: 0px;
+  border: 2px solid black;
+  margin-bottom: 15px;
+  padding-top: 3px;
+  transition: 0.5s;
+}
+
+.add-new-link:hover {
+  border-color: white;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  padding: 0 15px 20px 15px;
+  width: 200vh;
+  flex-wrap: wrap;
+}
+
+.item a {
+  transition: 1s;
+}
+
+.item:hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
+.item:hover a {
+  color: white;
+  transition: 1s;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link .options a {
+  margin-right: 10px;
+  transition: 1s;
+}
+
+.link .options a:hover {
+  color: rgb(80, 80, 80);
+  transition: 1s;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  height: 50px;
+  background-color: white;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  border-top: 5px solid black;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px 0px 40px ;
+  justify-content: space-between;
+}
